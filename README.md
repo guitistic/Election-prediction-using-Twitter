@@ -27,7 +27,7 @@ Here is a screenshot of our developer account in Twitter. We are using ‘Search
 Figure3: Twitter API account
 # Insert the snap shot at this place
 
-•	First, created a Twitter Client class. It contains all the methods needed to interact with Twitter API and parsing tweets. Used a __init__ function to handle the authentication of API client. [26]
+•	First, created a Twitter Client class. It contains all the methods needed to interact with Twitter API and parsing tweets. Used a __init__ function to handle the authentication of API client.
 •	In get tweets function, to fetch:
 fetched_tweets = self.api. search (q = query, count = count)
 to call the Twitter API to fetch tweets.
@@ -41,4 +41,4 @@ First, use clean tweet function to get rid of links, special characters, etc fro
 2.	Remove stop words from the tokens. (stop words are the commonly used words which are irrelevant in text analysis like I, am, you, are, etc.)
 3.	Do POS (part of speech) tagging of the tokens and select only significant features/tokens like adjectives, verbs, emotion words.
 4.	The tokens are passed to a sentiment classifier which classifies the tweet sentiment as positive, negative or neutral by assigning it a polarity between -1.0 to 1.0.
-Text Blob uses a Movies Reviews dataset in which we already have a training data set of positively or negatively labelled reviews. Positive and negative features are extracted from each positive and negative review respectively. Training data now consists of labelled positive and negative features. This data is trained using Naive Bayes Classifier. Then, sentiment is ised. Polarity method of Text Blob class to get the polarity of tweet between -1 to 1.
+Text Blob uses a Movies Reviews dataset in which we already have a training data set of positively or negatively labelled reviews. Positive and negative features are extracted from each positive and negative review respectively. Training data now consists of labelled positive and negative features. This data is trained using Naive Bayes Classifier. Then, sentiment is used. Polarity method of Text Blob class made into use to get the polarity of tweet between -1 to 1.
